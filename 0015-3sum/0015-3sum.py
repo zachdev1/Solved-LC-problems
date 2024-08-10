@@ -8,7 +8,7 @@ class Solution:
             z = len(nums)-1
             
             while y < z:
-                if nums[x] + nums[y] + nums[z] == 0 and (x != y and x != z and y != z):
+                if nums[x] + nums[y] + nums[z] == 0:
                     res.add((nums[x],nums[y],nums[z]))
                     y += 1
                     z -= 1
